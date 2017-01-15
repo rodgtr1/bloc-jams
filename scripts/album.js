@@ -234,7 +234,8 @@ var nextSong = function() {
     setSong(currentSongIndex + 1);
     currentSoundFile.play();
     updateSeekBarWhileSongPlays();
-
+    updatePlayerBarSong;
+    setTotalTimeInPlayerBar(filterTimeCode(currentSongFromAlbum.duration));
 
     // Update Player Bar information
     $('.currently-playing .song-name').text(currentSongFromAlbum.title);
@@ -269,7 +270,8 @@ var previousSong = function() {
     setSong(currentSongIndex + 1);
     currentSoundFile.play();
     updateSeekBarWhileSongPlays();
-
+    updatePlayerBarSong;
+    setTotalTimeInPlayerBar(filterTimeCode(currentSongFromAlbum.duration));
 
     // Update Player Bar information
     $('.currently-playing .song-name').text(currentSongFromAlbum.title);
